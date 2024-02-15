@@ -53,8 +53,8 @@ describe('Persistent Node Chat Server', () => {
           // Should have one result:
           expect(results.length).toEqual(1);
 
-          // TODO: If you don't have a column named text, change this test.
-          expect(results[0].text).toEqual(message);
+          // TODO: If you don't have a column named text, change this test. //Changed
+          expect(results[0].message).toEqual(message);
           done();
         });
       })
