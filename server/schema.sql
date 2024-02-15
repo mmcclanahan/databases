@@ -15,7 +15,9 @@ CREATE TABLE messages (
   message VARCHAR(280),
   createdAt DATE,
   userId INT,
+  chatroomID INT,
   FOREIGN KEY(userId) REFERENCES users(id)
+  FOREIGN KEY(chatroomID) REFERENCES chatroom(id)
 );
 CREATE TABLE chatroom (
   id INT PRIMARY KEY,
