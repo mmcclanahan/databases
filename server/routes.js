@@ -5,7 +5,7 @@ var router = require('express').Router();
 router.get('/messages', controller.messages.get);
 
 router.post('/messages', controller.messages.post);
-
+//put in console.log
 router.get('/users', controller.users.get);
 
 router.post('/users', controller.users.post);
